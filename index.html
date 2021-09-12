@@ -36,75 +36,114 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="../Portfolio/bootstrap.css"></script>
+		<script src="../Portfolio/bootstrap.min.css"></script>
+		<script src="../Portfolio/_variables.scss"></script>
+		<script src="../Portfolio/_bootswatch (1).scss"></script>
 	</head>
+
 	<body class="is-preload" >
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 		  AOS.init();
 		</script>
+		 -->
 		
+		<style type="text/css">
+			.loader-wrapper {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #242f3f;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 		
+			.loader {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				position: relative;
+				border: 4px solid #Fff;
+				animation: loader 2s infinite ease;
+			}
+		
+			.loader-inner {
+				vertical-align: top;
+				display: inline-block;
+				width: 100%;
+				background-color: #fff;
+				animation: loader-inner 2s infinite ease-in;
+			}
+			@keyframes loader {
+			0% { transform: rotate(0deg);}
+			25% { transform: rotate(180deg);}
+			50% { transform: rotate(180deg);}
+			75% { transform: rotate(360deg);}
+			100% { transform: rotate(360deg);}
+			}
+			@keyframes loader-inner {
+			0% { height: 0%;}
+			25% { height: 0%;}
+			50% { height: 100%;}
+			75% { height: 100%;}
+			100% { height: 0%;}
+			}
+		</style>
+		<!-- info -->
+		<style>
+			#prof {
+				border-radius: 50%;
+			}
+		</style>
+		<!-- <div class="loader-wrapper">
+			<span class="loader"><span class="loader-inner"></span></span>
+		</div> -->
 		<!-- Wrapper -->
 			<!-- <div id="wrapper" class="fade-in" > -->
 				
 				
 				<!-- Intro -->
+
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="user-select: auto;">
+					<div class="container-fluid" style="user-select: auto;">
+					  <a class="navbar-brand" href="#main" style="user-select: auto;">Profile</a>
+					  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="user-select: auto;">
+						<span class="navbar-toggler-icon" style="user-select: auto;"></span>
+					  </button>
+					  &nbsp;
+					  <div class="collapse navbar-collapse" id="navbarColor01" style="user-select: auto;">
+						<ul class="navbar-nav" style="user-select: auto;">
+						  <li class="nav-item" style="user-select: auto;">
+							<a class="nav-link" href="#skills" style="user-select: auto;">Skills
+							</a>
+						  </li>
+						  <li class="nav-item" style="user-select: auto;">
+							<a class="nav-link" href="#workexperience" style="user-select: auto;">Work-Experience</a>
+						  </li>
+						  <li class="nav-item" style="user-select: auto;">
+							<a class="nav-link" href="#education" style="user-select: auto;">Education</a>
+						  </li>&nbsp;
+						  <li class="nav-item" style="user-select: auto;">
+							<a class="nav-link" href="https://tarunsankhla.github.io/files/TarunSankhla_Resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o" style='font-size:24px;'></i>  Resume</a>
+						</li>
+						 
+						</ul>
+						
+					  </div>
+					</div>
+				  </nav>
+
+				 
+				
 			<div id="intro" class="w3-container w3-center w3-animate-right" >
 				<!-- animation -->
-					<!-- <div class="loader-wrapper">
-						<span class="loader"><span class="loader-inner"></span></span>
-					</div> -->
-
-				<style type="text/css">
-					.loader-wrapper {
-						width: 100%;
-						height: 100%;
-						position: absolute;
-						top: 0;
-						left: 0;
-						background-color: #242f3f;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-					}
+					
 				
-					.loader {
-						display: inline-block;
-						width: 30px;
-						height: 30px;
-						position: relative;
-						border: 4px solid #Fff;
-						animation: loader 2s infinite ease;
-					}
 				
-					.loader-inner {
-						vertical-align: top;
-						display: inline-block;
-						width: 100%;
-						background-color: #fff;
-						animation: loader-inner 2s infinite ease-in;
-					}
-					@keyframes loader {
-					0% { transform: rotate(0deg);}
-					25% { transform: rotate(180deg);}
-					50% { transform: rotate(180deg);}
-					75% { transform: rotate(360deg);}
-					100% { transform: rotate(360deg);}
-					}
-					@keyframes loader-inner {
-					0% { height: 0%;}
-					25% { height: 0%;}
-					50% { height: 100%;}
-					75% { height: 100%;}
-					100% { height: 0%;}
-					}
-				</style>
-				<!-- info -->
-				<style>
-					#prof {
-						border-radius: 50%;
-					}
-				</style>
 				<br/><br/>
 				<div class="w3-container w3-center w3-animate-right">
 					<img id="prof" src="images/pro.jpg" style="text-align: center;height: 180px;width: 180px;" alt="Avatar">
@@ -125,24 +164,24 @@
 			</div> 
 
 			<!-- Header -->
-			<br/>
-			<hr/>
+			<!-- <br/>
+			<hr/> -->
 			<!-- <header id="header">
 				<a href="index.html" class="logo"> <i class="fas fa-angle-left"></i> <i class="fas fa-angle-right"></i> See My Work </a>
 			</header> -->
 
 			<!-- Nav -->
-			<br/>
+			<!-- <br/>
 			<hr/>
-			<nav id="nav">
-				<ul class="links">
+			<nav id="nav"> -->
+				<!-- <ul class="links">
 					<li><a href="#main">Projects </a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#workexperience">Work-Experience</a></li>
 					<li><a href="#education">Education</a></li>
 					<li><a href="https://tarunsankhla.github.io/files/TarunSankhla_Resume.pdf" target="_blank" rel="noopener noreferrer" style="margin-left: 35px;margin-right: 35px;"> <i class="fa fa-file-pdf-o" style='font-size:24px;'></i> Resume  </a></li>
 					
-				</ul>
+				</ul> -->
 				<!-- <ul class="icons alt">
 					<li><a href="https://tarunsankhla.hashnode.dev/" target="_blank" rel="noopener noreferrer" class="icon brands"><i class="fas fa-blog fa-spin"></i><span class="label">Blog</span></a></li>
 					<li><a href="https://www.linkedin.com/in/tarun-sankhla/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin fa-spin"><span class="label">Linkedin</span></a></li>
@@ -152,7 +191,7 @@
 					<li><a href="https://linktr.ee/tarunsank" target="_blank" rel="noopener noreferrer" class="icon brands fa-linode"><span class="label">Linktree</span></a></li>
 					
 				</ul> -->
-			</nav>
+			<!-- </nav> -->
 
 			<!-- Main -->
 			<br/>
@@ -261,6 +300,7 @@
 				<hr/>
 					<div id="workexperience" class="w3-container w3-center w3-animate-right" >
 						<h2 style=" text-align: center;color: #002366;"> Work Experience </h2>
+						<br/>
 						<!-- CG  --><br/>
 						<header class="major" data-aos="fade-bottom">
 									<span class="date">Jan 2021 - current</span>
@@ -290,7 +330,7 @@
 								<h3>Mumbai, India</h3>
 							</ul>
 						</article>
-
+						<br/>
 						<!-- Bitkraft  -->
 						<header class="major" data-aos="fade-bottom"> 
 								<span class="date">Nov 2020 -Jan 2021</span>
@@ -314,7 +354,7 @@
 								<h3>Mumbai, India</h3>
 							</ul>
 						</article>
-
+						<br/>
 						<!-- AREAL  -->
 						<header class="major" data-aos="fade-bottom">
 								<span class="date">Sep 2020 -Dec 2020</span>
@@ -338,7 +378,7 @@
 								<h3>Mumbai, India</h3>
 							</ul>
 						</article>
-
+						<br/>
 						<!-- harrier  -->
 						<header class="major" data-aos="fade-bottom">
 							<span class="date">Dec 2019 - Jan 2020
@@ -372,6 +412,7 @@
 						</article>
 						<span id="dots"></span>
 						<span id="more">
+							<br/>
 							<!-- Revolux -->
 							<header class="major" data-aos="fade-bottom">
 								<span class="date">Jul 2020 - Oct 2020
@@ -398,6 +439,7 @@
 							</article>
 
 							<!-- April Innovation -->
+							<br/>
 							<header class="major" data-aos="fade-bottom">
 									<span class="date"> Aug 2018 -Nov 2018
 									</span>
@@ -611,7 +653,7 @@
 						<h3>Mumbai, India</h3>
 					</ul>
 				</article>
-
+				<br/>
 				<header class="major" data-aos="fade-bottom">
 						<span class="date">2014 - 2016</span>
 				</header>
@@ -624,7 +666,7 @@
 						<h3>Mumbai, India</h3>
 					</ul>
 				</article>
-
+				<br/>
 				<header class="major" data-aos="fade-bottom">
 					<span class="date">2014</span>
 				</header>
