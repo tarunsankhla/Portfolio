@@ -1,2 +1,2 @@
 # Portfolio
-In progress - https://tarunsankhla.netlify.app/
+- https://tarunsankhla.netlify.app/
